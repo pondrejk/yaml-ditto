@@ -3,13 +3,13 @@ yaml-ditto
 
 Consider the following yaml file:
 
-"""Yaml
+```Yaml
 web:
   RSS: Really Simple Syndication
   RSS: Rich Site Summary
 hw:
   RSS: Resident Set Size
-"""
+```
 
 When serializing this file, for example to a hash structure in Ruby, the key-value pair on line two is silently overwritten by the pair on the next line, which is expected behavior. This script helps to detect such duplicates in yaml files, so that you can modify the files accordingly. It can also detect duplicate keys that do not get overwritten (last line in above example). You can also use it to search for repeated keys in multiple yaml files.
 
