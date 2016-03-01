@@ -82,7 +82,7 @@ function compare_files {
        local compared=`parse_last_key $i | sort | uniq -i | sort`
        for j in $to_compare
        do
-         [[ $compared =~ $j ]] && echo "    $j"
+         [[ $compared == $j ]] && echo "    $j"
        done
      fi
    done
