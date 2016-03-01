@@ -99,7 +99,7 @@ function show_help {
   echo "      (with occurrence count, case insensitive, default option)"
   echo "  -m  same as -d, but for multiple files"
   echo "  -a  print all duplicate yaml keys (with occurrence count, case insensitive)"
-  echo "  -c  compare keys in two yaml files"
+  echo "  -c  compare keys in two or more yaml files"
   echo "  -h  display this help and exit"
   echo
 }
